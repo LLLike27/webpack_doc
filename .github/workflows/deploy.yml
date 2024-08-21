@@ -47,7 +47,7 @@ jobs:
         run: yarn install 
       - name: Build with VitePress
         run: |
-          yarn docs:build 
+          npm run build 
           touch .nojekyll  # 通知githubpages不要使用Jekyll处理这个站点，不知道为啥不生效，就手动搞了
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
