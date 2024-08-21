@@ -135,24 +135,11 @@ export const data = {
   "git": {
     "contributors": [
       {
-        "name": "caohong",
-        "email": "1449688523@qq.com",
+        "name": "LLLike27",
+        "email": "lushuaizong@gmail.com",
         "commits": 1
       }
     ]
   },
   "filePathRelative": "senior/liftingSpeed.md"
-}
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
 }
