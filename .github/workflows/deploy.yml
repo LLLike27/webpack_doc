@@ -31,14 +31,14 @@ jobs:
         uses: actions/configure-pages@v3
       - name: Install dependencies
         run: yarn install # Install dependencies with yarn
-      - name: Build with VitePress
+      - name: Build with VuePress
         run: |
           yarn docs:build # Build the project
           touch .nojekyll  # Disable Jekyll processing
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
-          path: ./dist # Specify the build directory
+          path: /docs/.vuepress/dist # Specify the build directory
 
   # Deploy job
   deploy:
